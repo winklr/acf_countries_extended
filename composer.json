@@ -1,5 +1,6 @@
 {
   "name": "mwinkler/acf_countries_extended",
+  "version": "1.0.0",
   "description": "Configurable country list selector",
   "type": "wordpress-plugin",
   "require": {

@@ -1,0 +1,37 @@
+{
+  "name": "acf_countries_extended",
+  "version": "1.0.0",
+  "description": "ACF Wordpress plugin adding a field for selecting countries",
+  "private": true,
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:winklr/acf_countries_extended.git"
+  },
+  "author": "Martin Winkler <martin@werk85.de>",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "use-yarn || ( npm install --save-dev --no-scripts --no-save use-yarn && use-yarn )",
+    "dev": "yarn development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "yarn development --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "yarn production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.7",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.27.0",
+    "sass-loader": "^8.0.2",
+    "use-yarn": "^2.2.0",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "compare-versions": "^3.6.0",
+    "famfamfam-flags": "^1.0.0"
+  }
+}

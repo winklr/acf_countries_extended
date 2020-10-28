@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+  <description>The coding standard for the project.</description>
+  <rule ref="PSR2"/>
+
+  <file>src</file>
+  <file>tests</file>
+
+  <!-- Show progression -->
+  <arg value="p"/>
+  <!-- Use colored output -->
+  <arg name="colors"/>
+  <!-- parse files ending with extensions -->
+  <arg name="extensions" value="php,inc" />
+</ruleset>
